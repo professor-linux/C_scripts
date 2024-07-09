@@ -7,5 +7,6 @@ double average(int collection[], int size);
 int findMax(int collection[], int size);
 int findMin(int collection[], int size);
 int printAll(int collection[], int size);
-void sort(int collection[], int size);
+void sortFwd(int collection[], int size);
+void sortRev(int collection[], int size);
 #endif /* ARRAY_FUNCTIONS_H */
