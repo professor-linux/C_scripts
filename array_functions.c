@@ -53,7 +53,7 @@ int findMin(int collection[], int size){
 
 // Bubble Sort
 
-void sort(int collection[], int size){
+void sortFwd(int collection[], int size){
 
   // loops over size of arr - 1 
   for(int i = 0; i < size -1; i++){
@@ -72,3 +72,24 @@ void sort(int collection[], int size){
   
   
 }
+
+void sortRev(int collection[], int size){
+
+  // loops over size of arr - 1 
+  for(int i = 0; i < size -1; i++){
+    // loops over all elements in array to compare them
+     for(int j = 0; j < size-i-1; j++){
+
+          if(collection[j] < collection[j+1]){
+            int temp = collection[j+1];
+            collection[j+1] = collection[j];
+            collection[j] = temp;
+          }
+
+     }    
+
+  }
+
+
+}
+
